@@ -15,10 +15,13 @@ git branch Charles
 git branch Mobile_testing
 
 2. Запушить все ветки на внешний репозиторий 
-get push origin -all
+git add .
+git commit -m "update"
+git push -u origin CheckLists
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
 > Bug_report_structure.txt
 vi Bug_report_structure.txt
+
 press "i"
 
 Идентификатор (Id)
@@ -38,9 +41,35 @@ press "i"
 press Esc
 :wq
 4. Запушить структуру багрепорта на внешний репозиторий
-5. Вмержить ветку Bag Reports в Main
+git push -u origin Bug_Reports
+5. Вмержить ветку Bug_Reports в main
+git checkout main
+git merge Bug_reports
 6. Запушить main на внешний репозиторий.
+git commit -am "Update" 
+git push
 7. В ветке CheckLists набросать структуру чек листа.
+git checkout CheckLists
+> CheckLists.txt
+vi CheckLists.txt
+
+press "i"
+
+Идентификатор (Id)
+Задача (Task)
+Результат (Result)
+--------------------------
+Шаги по воспроизведению(STR, steps to reproduce)
+Комментарии (Comments)
+ 
+press Esc
+:wq
 8. Запушить структуру на внешний репозиторий
+git add .
+git commit -m "update"
+git push -u origin CheckLists
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+Click Create pull request > Merge 
 10. Синхронизировать Внешнюю и Локальную ветки Main
+git checkout main
+git pull
