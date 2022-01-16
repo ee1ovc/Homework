@@ -17,7 +17,7 @@ git branch Mobile_testing
 2. Запушить все ветки на внешний репозиторий 
 git add .
 git commit -m "update"
-git push -u origin CheckLists
+git push -u origin git push origin --all
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
 > Bug_report_structure.txt
 vi Bug_report_structure.txt
