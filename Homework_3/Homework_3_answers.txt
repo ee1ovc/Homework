@@ -17,7 +17,8 @@ git branch Mobile_testing
 2. Запушить все ветки на внешний репозиторий 
 git add .
 git commit -m "update"
-git push -u origin git push origin --all
+git push -u origin 
+git push origin --all
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
 > Bug_report_structure.txt
 vi Bug_report_structure.txt
@@ -67,9 +68,9 @@ press Esc
 8. Запушить структуру на внешний репозиторий
 git add .
 git commit -m "update"
-git push -u origin CheckLists
+git push 
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
-Click Create pull request > Merge 
+Open > View > Click Create pull request > Merge 
 10. Синхронизировать Внешнюю и Локальную ветки Main
 git checkout main
 git pull
